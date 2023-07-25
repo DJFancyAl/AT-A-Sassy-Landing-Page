@@ -1,3 +1,37 @@
+.box {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.box {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.btn-secondary, .btn-primary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+}
+.btn-secondary:hover, .btn-primary:hover {
+  transform: scale(0.8);
+}
+
+.btn-primary {
+  background-color: #001c47;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #a2d0fc;
+  color: black;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,15 +52,39 @@ a {
   text-decoration: none;
 }
 
-nav {
+.hero {
   background-color: #000814;
-  color: #a2d0fc;
+  color: white;
+  min-height: 95vh;
 }
-nav a {
-  color: #a2d0fc;
+.hero nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
 }
-nav h1, nav li {
+.hero nav li {
   display: inline;
+  padding-left: 15px;
+}
+.hero nav li a {
+  color: white;
+}
+.hero nav li a:hover {
+  color: #FFC300;
+}
+.hero .hero-content {
+  padding: 40px 0;
+  flex-grow: 1;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.hero .hero-content h1 {
+  font-size: 3.2rem;
+}
+.hero .hero-content img {
+  width: 50%;
 }
 
 .m-1 {

@@ -23,21 +23,11 @@ a {
 }
 
 .hero {
-  // This is where the bulk of the SCSS styling needs to be done
-
-  // Take a look at the other files we've built already. How can they be useful here?
-
-  // Also, take time to review the features of SCSS we've already covered:
-  // 1. $variables
-  // 2. nesting (dont forget about the ampersand (&) parent selector!)
-  // 3. At-Rules
-  min-height: 95vh;
-  // background-color: $primary-color;
   @include set-bg($primary-color);
+  min-height: 95vh;
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: end;
     padding: 15px 0;
     li {
       display: inline;
@@ -52,8 +42,11 @@ a {
   }
   .hero-content {
     padding: 40px 0;
-    display: flex;
+    flex-grow: 1;
     align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     h1 {
       font-size: 3.2rem;
     }
